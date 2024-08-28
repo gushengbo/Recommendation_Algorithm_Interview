@@ -14,4 +14,12 @@ GBDT的基本公式为：![image](https://github.com/user-attachments/assets/4eb
 8. TSNE是什么？
 9. 使用Neural-Chat做数据增强，因为问题只有很简短的一句话，去匹配论文的摘要。用大语言模型补充更多的信息，去匹配长度相似的论文摘要。
 10. 迭代伪标签，充分利用无标签数据集。
-   
+
+Transformer
+  11. transformer encoder-decoder， encoder用多头注意力机制和MLP（对每个单词做投影）为一个block，6个block合成一个encoder。
+  12. decoder也是6个，有一个自回归的东西，就是预测t时刻的时候，前t-1时刻的输出也作为输入，并且有mask，就是为了mask掉t时刻以后的输入。sequence mask 是为了使得 decoder 不能看见未来的信息。什么是 padding mask 呢？因为每个批次输入序列长度是不一样的也就是说，我们要对输入序列进行对齐。multi-head就是模仿cnn的多通道。用多个dot-product attention 并行计算(多个linear，多种投影)，然后concat，再输入到线性层。
+  13. 自注意力机制：输入到encoder的k,v,q矩阵的embedding都是同一个，也就是句子每个单词编码成embedding。每个query跟所有key做相似度，得到的权重再乘以所有的value，得到对应那个query位置的输出。
+  14. 注意：
+  1、在Encoder中的Multi-Head Attention也是需要进行mask的，只不过Encoder中只需要padding mask即可，而Decoder中需要padding mask和sequence mask。
+  2、Encoder中的Multi-Head Attention是基于Self-Attention地，Decoder中的第二个Multi-Head Attention就只是基于Attention，它的输入Quer来自于Masked Multi-Head Attention的输出，Keys和Values来自于Encoder中最后一层的输出。
+  15. position encoding, 加入时序信息。
