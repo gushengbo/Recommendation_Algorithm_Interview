@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/f1e97a0f-0bfd-402b-829a-784222121f6b)1. LR线性回归的原理和推导
+1. LR线性回归的原理和推导
 2. XGBoost原理及其推导
   是一种基于梯度提升决策树（Gradient Boosting Decision Trees, GBDT）的高效实现。GBDT是一种集成学习方法，它通过逐步构建多个决策树，每棵树都是在前一棵树的基础上进行改进。具体来说，GBDT使用梯度下降的思想来最小化损失函数，逐步调整模型的预测值。
 
