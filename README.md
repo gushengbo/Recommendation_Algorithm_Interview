@@ -36,6 +36,18 @@ DIEN的这两个创新点，体现出了DIEN更加注重对用户序列的深度
 二、MIMN
 MIMN是阿里妈妈于2019年发布在KDD 19上的又一兴趣模型，其所解决的问题是超长（1000这个量级）兴趣序列在线推断建模，实现方法是用户兴趣求解解耦+多通道兴趣建模。核心创新点是偏向工程实现（向减少时延妥协），在算法上结构上不比DIEN复杂。
 
+推荐系统传统经典算法：
+一、FM
+![image](https://github.com/user-attachments/assets/d350ab67-eb29-473f-a0ec-c493940e6d9d)
+
+数学表达式如下：
+
+![image](https://github.com/user-attachments/assets/dcadbd95-999b-42fb-b9fc-268ab090167e)
+
+
+
+
+项目的细节：
 
 1. LR线性回归的原理和推导
 2. XGBoost原理及其推导
