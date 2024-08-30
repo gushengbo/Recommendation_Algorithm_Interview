@@ -1,6 +1,7 @@
 推荐算法经典模型![image](https://github.com/user-attachments/assets/27be482c-8a3d-4c9b-ada3-33d19a803a33)
 
 一、DIN模型
+
 DIN模型出发点：作为阿里发布的第一个兴趣建模模型，其出发点是基于阿里妈妈团队在其业务数据中观察到的Diversity和Local activation现象。
 
 Diversity和Local activation 名词理解：
@@ -11,7 +12,30 @@ Local activation则指的是，尽管用户历史兴趣呈多峰分布，但决�
 在最终下单笔记本电脑前，我们产生了很多的水果、鞋子以及笔记本的选货记录。但在购买笔记本这件事情上，只有和笔记本相关的访问中，才可能隐藏我们可能下单的兴趣信息。
 
 ![image](https://github.com/user-attachments/assets/ef906f2c-cde7-4ace-8fb3-3f6daf69938c)
+
 如上图1-2左是阿里2016提出的GwEN，其代表着业界对用户行为序列处理的流行做法，会将用户的历史行为直接pooling后输入MLP部分。而DIN则是通过activation unit计算出candidate与用户历史行为的兴趣度分值，并以此分值加权做sum-pooling，然后再将pooling后的结果与商品candidate的embedding concatenate后输入MLP。
+
+二、DIEN 
+
+DIEN不同于DIN和其它兴趣模型的创新点在于：
+
+不把用户访问行为直接当做用户兴趣，而是设计了GRU单元来抽取用户兴趣和模拟兴趣迁移过程。
+为了避免用户兴趣的迁移（interest drifting ）带来的影响，设计了基于带attention 的GRU单元AUGRU，来强化用户相关兴趣与candidate的注意力权重。
+
+DIEN的这两个创新点，体现出了DIEN更加注重对用户序列的深度挖掘，这么说的原因如下：
+
+利用了用户行为序列中，极具信息量的用户购物时序信号，模拟了用户兴趣转移。
+如DIN模型，无序的把用户行为与candidate进行attention计算，忽略了用户访问序列时序和用户兴趣递进演绎信息。而在用户购物时，最近访问的商品恰恰对下一次购买商品的影响较大。
+能够从序列化的用户访问记录中，抽象出信息量更高的用户兴趣。
+
+行为序列层（Behavior Layer ，图浅绿色部分）：将原始的ID特征转为稠密的embedding特征。
+兴趣抽取层（Interest Extractor Layer，图淡黄色部分）：基于用户行为序列模拟用户兴趣迁移，抽取用户各个状态对应的兴趣。
+兴趣进化层（Interest Evolving Layer，图粉色部分）：强化用户相关兴趣与candidate的注意力权重。
+![image](https://github.com/user-attachments/assets/dd5fbb5b-f4cf-49d2-ab75-b75152f2690b)
+
+二、MIMN
+MIMN是阿里妈妈于2019年发布在KDD 19上的又一兴趣模型，其所解决的问题是超长（1000这个量级）兴趣序列在线推断建模，实现方法是用户兴趣求解解耦+多通道兴趣建模。核心创新点是偏向工程实现（向减少时延妥协），在算法上结构上不比DIEN复杂。
+
 
 1. LR线性回归的原理和推导
 2. XGBoost原理及其推导
