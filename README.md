@@ -1,4 +1,5 @@
 推荐算法经典模型![image](https://github.com/user-attachments/assets/27be482c-8a3d-4c9b-ada3-33d19a803a33)
+
 一、DIN模型
 DIN模型出发点：作为阿里发布的第一个兴趣建模模型，其出发点是基于阿里妈妈团队在其业务数据中观察到的Diversity和Local activation现象。
 
