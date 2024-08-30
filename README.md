@@ -47,6 +47,11 @@ MIMN是阿里妈妈于2019年发布在KDD 19上的又一兴趣模型，其所解
 
 ![image](https://github.com/user-attachments/assets/e7ba0e24-0d10-4cce-b423-920f5f88cdd9)
 
+x是标量，xi表示在某一个特征上的取值，比如年龄，可以去1，2，3，4等等。
+![image](https://github.com/user-attachments/assets/41164225-5faa-4f84-bf6e-bda0c1f3dbbb)
+
+![image](https://github.com/user-attachments/assets/4e7a3066-456e-4911-a7b4-4c849a0ab901)
+
 
 
 
