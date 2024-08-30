@@ -1,3 +1,17 @@
+推荐算法经典模型![image](https://github.com/user-attachments/assets/27be482c-8a3d-4c9b-ada3-33d19a803a33)
+一、DIN模型
+DIN模型出发点：作为阿里发布的第一个兴趣建模模型，其出发点是基于阿里妈妈团队在其业务数据中观察到的Diversity和Local activation现象。
+
+Diversity和Local activation 名词理解：
+
+Diversity指用户历史兴趣呈多峰分布。即用户在过去的一段时间中，会对各种行然不同的商品产生兴趣，并产生浏览、点击、加购、下单、复购等指示性消费信息。
+考虑我们实际使用淘宝场景。如果我们在短期内想购买多种不同类别的商品，如水果、鞋子、笔记本电脑，并产生了大量相关的访问记录。那么在当前时刻，我们至少存在三个截然不同的兴趣峰。
+Local activation则指的是，尽管用户历史兴趣呈多峰分布，但决定用户当下转化只会是其中的某几个兴趣导致。
+在最终下单笔记本电脑前，我们产生了很多的水果、鞋子以及笔记本的选货记录。但在购买笔记本这件事情上，只有和笔记本相关的访问中，才可能隐藏我们可能下单的兴趣信息。
+
+![image](https://github.com/user-attachments/assets/ef906f2c-cde7-4ace-8fb3-3f6daf69938c)
+如上图1-2左是阿里2016提出的GwEN，其代表着业界对用户行为序列处理的流行做法，会将用户的历史行为直接pooling后输入MLP部分。而DIN则是通过activation unit计算出candidate与用户历史行为的兴趣度分值，并以此分值加权做sum-pooling，然后再将pooling后的结果与商品candidate的embedding concatenate后输入MLP。
+
 1. LR线性回归的原理和推导
 2. XGBoost原理及其推导
   是一种基于梯度提升决策树（Gradient Boosting Decision Trees, GBDT）的高效实现。GBDT是一种集成学习方法，它通过逐步构建多个决策树，每棵树都是在前一棵树的基础上进行改进。具体来说，GBDT使用梯度下降的思想来最小化损失函数，逐步调整模型的预测值。
