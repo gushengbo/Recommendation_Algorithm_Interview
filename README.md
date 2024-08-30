@@ -38,6 +38,7 @@ MIMN是阿里妈妈于2019年发布在KDD 19上的又一兴趣模型，其所解
 
 推荐系统传统经典算法：
 一、FM
+
 ![image](https://github.com/user-attachments/assets/d350ab67-eb29-473f-a0ec-c493940e6d9d)
 
 数学表达式如下：
