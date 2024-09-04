@@ -46,6 +46,8 @@ MIMN是阿里妈妈于2019年发布在KDD 19上的又一兴趣模型，其所解
 
 数学表达式如下：
 
+![image](https://github.com/user-attachments/assets/881f0132-6541-40b6-8f08-a785fa0d2c0a)
+之前要维护n*n的矩阵，很多是稀疏的，现在只需要维护一个n*k的矩阵,k远小于n
 ![image](https://github.com/user-attachments/assets/9b8a85a4-906a-44e6-8f9f-ab7f790fae9b)
 
 
