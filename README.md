@@ -96,6 +96,7 @@ Transformer
   1、在Encoder中的Multi-Head Attention也是需要进行mask的，只不过Encoder中只需要padding mask即可，而Decoder中需要padding mask和sequence mask。
   2、Encoder中的Multi-Head Attention是基于Self-Attention地，Decoder中的第二个Multi-Head Attention就只是基于Attention，它的输入Quer来自于Masked Multi-Head Attention的输出，Keys和Values来自于Encoder中最后一层的输出。
   15. position encoding, 加入时序信息。(sin,cos,sin....)长度512，与input embedding相加
+![image](https://github.com/user-attachments/assets/57529852-1332-44b7-93ad-2cfb737f71ad)
 
 BERT
 双向的，之前的语言模型都是单向预测的。MLM和NSP
