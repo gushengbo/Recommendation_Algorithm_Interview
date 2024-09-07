@@ -61,7 +61,10 @@ x是标量，xi表示在某一个特征上的取值，比如年龄，可以去1�
 ![image](https://github.com/user-attachments/assets/db7fe451-4974-473d-b27a-7e9e4434fafa)
 
 二、 FFM 通过引入特征域，使模型特征交叉能力更强。
+与不同域的特征做交叉，表现出不同的特征信息。
+![image](https://github.com/user-attachments/assets/11080149-0ceb-413f-9cda-b23d9baa38db)
 
+![image](https://github.com/user-attachments/assets/92b3f28d-af5d-438e-b12b-c21689c92539)
 
 
 
