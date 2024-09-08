@@ -70,6 +70,9 @@ x是标量，xi表示在某一个特征上的取值，比如年龄，可以去1�
 
 
 四、GBDT+LR
+
+回归树：
+
 ![image](https://github.com/user-attachments/assets/b95cd53e-784a-4c1e-9add-31d6a53f8866)
 ![image](https://github.com/user-attachments/assets/8ef8b910-660d-487f-98bd-5a60f056c193)
 
