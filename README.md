@@ -77,8 +77,17 @@ I的含义：x属于第m个节点，则为1.
 
 ![image](https://github.com/user-attachments/assets/6f3a61a3-5534-43a7-b2c2-11259d36d1a2)
 
+![image](https://github.com/user-attachments/assets/dda320e9-085d-4ac7-8263-c37045484c38)
 
+训练步骤：找判断的特征和阈值-计算cm-计算损失-找损失最小的特征判断和阈值。
 
+![image](https://github.com/user-attachments/assets/8b763497-e81f-4f89-9024-3de5760b8fb9)
+
+![image](https://github.com/user-attachments/assets/20544f70-c9ec-489f-b552-94a4b2639f9b)
+
+![image](https://github.com/user-attachments/assets/411d7f85-a574-408a-83ed-d68419fb125e)
+
+将负梯度当作下一棵树训练的GT，对所有损失函数都通用。
 
 项目的细节：
 
