@@ -84,6 +84,8 @@ I的含义：x属于第m个节点，则为1.
 
 训练步骤：找判断的特征和阈值-计算cm-计算损失-找损失最小的特征判断和阈值。
 
+GBDT希望用一种通过的方法，来解决回归树、分类树以及其他各类树。
+
 ![image](https://github.com/user-attachments/assets/8b763497-e81f-4f89-9024-3de5760b8fb9)
 
 ![image](https://github.com/user-attachments/assets/20544f70-c9ec-489f-b552-94a4b2639f9b)
