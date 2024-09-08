@@ -66,6 +66,16 @@ x是标量，xi表示在某一个特征上的取值，比如年龄，可以去1�
 
 ![image](https://github.com/user-attachments/assets/92b3f28d-af5d-438e-b12b-c21689c92539)
 
+三、wide&deep
+
+
+四、GBDT+LR
+![image](https://github.com/user-attachments/assets/b95cd53e-784a-4c1e-9add-31d6a53f8866)
+![image](https://github.com/user-attachments/assets/8ef8b910-660d-487f-98bd-5a60f056c193)
+
+I的含义：x属于第m个节点，则为1.
+
+![image](https://github.com/user-attachments/assets/6f3a61a3-5534-43a7-b2c2-11259d36d1a2)
 
 
 
