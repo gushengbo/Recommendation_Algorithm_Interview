@@ -133,6 +133,8 @@ Transformer
   15. position encoding, 加入时序信息。(sin,cos,sin....)长度512，与input embedding相加
 ![image](https://github.com/user-attachments/assets/57529852-1332-44b7-93ad-2cfb737f71ad)
 
+  16. DBSCAN聚类
+  17. 
 BERT
 双向的，之前的语言模型都是单向预测的。MLM和NSP
 t-SNE降维方法https://zhuanlan.zhihu.com/p/426068503  保证降维前后它们是否具有相同的距离结构
