@@ -148,6 +148,9 @@ Transformer
 ![image](https://github.com/user-attachments/assets/57529852-1332-44b7-93ad-2cfb737f71ad)
 
   16. DBSCAN聚类
+  
+  k-means的k如何取， 肘部法则
+  
   17. 
 BERT
 双向的，之前的语言模型都是单向预测的。MLM和NSP
