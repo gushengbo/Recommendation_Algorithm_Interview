@@ -98,6 +98,19 @@ GBDT+LR: 分开训练的。
 ![image](https://github.com/user-attachments/assets/66fc3da8-d469-4910-8265-c2a30ed9fceb)
  ![image](https://github.com/user-attachments/assets/c216cb3c-a2c9-4c13-8ebb-f1517f1260e8)
 
+如何处理缺失值ß
+![image](https://github.com/user-attachments/assets/c03f4ffc-c23b-4971-9eda-60b3af6cd5bb)
+
+
+
+
+
+
+
+
+
+
+
 
 项目的细节：
 
